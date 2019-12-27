@@ -1,1 +1,8 @@
 <p>list works!</p>
+
+<table>
+	<tr *ngFor="let a of list">
+		<td><a routerLink="/item/{{ a.id }}">{{ a.id }}</a></td>
+		<td>{{ a.mark4 }}</td>
+	</tr>
+</table>

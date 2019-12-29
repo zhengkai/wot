@@ -8,3 +8,6 @@ default:
 ssr:
 	npm run build:ssr
 	PORT=22005 npm run serve:ssr
+
+init:
+	npm i

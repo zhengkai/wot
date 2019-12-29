@@ -14,6 +14,8 @@ export class ItemComponent implements OnInit {
 
 	data: any;
 
+	tank: any;
+
 	constructor(
 		private route: ActivatedRoute,
 	) {
@@ -26,10 +28,11 @@ export class ItemComponent implements OnInit {
 		const params = this.route.snapshot.params;
 		this.id = +params.id;
 
-		const res = await Data.fetch();
+		const res = await Data.list();
+
+		console.log('res', res);
 
 		const d = res[this.id];
-
 		if (!d) {
 			this.found = false;
 			return;

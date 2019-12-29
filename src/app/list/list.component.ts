@@ -14,10 +14,9 @@ export class ListComponent implements OnInit {
 	}
 
 	async ngOnInit() {
-		const res = await Data.fetch();
+		const res = await Data.list();
 
 		Object.entries(res).forEach(([k, v]) => {
-			v.id = +k;
 			this.list.push(v);
 		});
 	}

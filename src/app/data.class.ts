@@ -11,6 +11,14 @@ export class Data {
 	static init = false;
 	static cache = {} as ICache;
 
+	static typeShort = {
+		mediumTank: 'MT',
+		lightTank: 'LT',
+		heavyTank: 'HT',
+		SPG: 'SPG',
+		'AT-SPG': 'TD',
+	};
+
 	static async list() {
 
 		if (this.init) {
@@ -28,7 +36,7 @@ export class Data {
 			v.id = +k;
 			v.name = t.alias;
 			v.level = t.level;
-			v.type = t.type;
+			v.type = this.typeShort[t.entype];
 		});
 
 		this.init = true;

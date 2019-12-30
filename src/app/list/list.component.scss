@@ -1,0 +1,20 @@
+.filter {
+	li {
+		display: inline;
+		button.select {
+			background-color: #def;
+		}
+	}
+}
+
+.tank-list {
+	th {
+		text-align: center;
+		padding: 8px;
+		font-weight: bold;
+		min-width: 100px;
+	}
+	td.num {
+		text-align: right;
+	}
+}

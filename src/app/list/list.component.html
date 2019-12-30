@@ -1,8 +1,39 @@
-<table>
-	<tr *ngFor="let a of list">
-		<td><a routerLink="/item/{{ a.id }}">{{ a.name }}</a></td>
-		<td>{{ a.level }}</td>
-		<td>{{ a.type }}</td>
-		<td>{{ a.mark4 }}</td>
+<div class="filter">
+	<ul>
+		<li *ngFor="let t of typeName">
+			<button [class.select]="filter.type.includes(t)" (click)="typeClick(t)">{{ t }}</button>
+		</li>
+		<li>
+			<button (click)="typeClick()">all</button>
+		</li>
+	</ul>
+	<ul>
+		<li *ngFor="let level of levelRange">
+			<button [class.select]="filter.level.includes(level)" (click)="levelClick(level)">{{ level }}</button>
+		</li>
+		<li>
+			<button (click)="levelClick()">all</button>
+		</li>
+	</ul>
+</div>
+
+<table class="tank-list">
+	<tr>
+		<ng-container *ngFor="let r of rowKey">
+			<th (click)="sortClick(r)">{{ r }}</th>
+		</ng-container>
 	</tr>
+	<ng-container *ngFor="let a of list">
+		<tr *ngIf="a.show">
+			<td><a routerLink="/item/{{ a.id }}">{{ a.name }}</a></td>
+			<td>{{ a.level }}</td>
+			<td>{{ a.type }}</td>
+			<td class="num">{{ a.damage }}</td>
+			<td class="num">{{ a.assist }}</td>
+			<td class="num">{{ a.winpower }}</td>
+			<td class="num">{{ a.daypower }}</td>
+			<td class="num">{{ a.spotted }}</td>
+			<td class="num">{{ a.xp }}</td>
+		</tr>
+	</ng-container>
 </table>

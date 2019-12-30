@@ -1,3 +1,5 @@
+import { environment } from '../environments/environment';
+
 interface ISubData {
 	[key: string]: any;
 }
@@ -44,7 +46,7 @@ export class Data {
 	}
 
 	static async _fetch(name: string) {
-		const res = await fetch(`/assets/${name}.json`);
+		const res = await fetch(`${environment.path}assets/${name}.json`);
 		const text = await res.text();
 		const j = JSON.parse(text) as ISubData;
 		this.cache[name] = j;

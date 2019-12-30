@@ -1,0 +1,139 @@
+{
+	"map": {
+		"1":{"mapname":"01_karelia","alias":"卡累利阿"},
+		"2":{"mapname":"02_malinovka","alias":"马利诺夫卡"},
+		"3":{"mapname":"04_himmelsdorf","alias":"锡默尔斯多夫"},
+		"4":{"mapname":"05_prohorovka","alias":"普罗霍洛夫卡"},
+		"5":{"mapname":"07_lakeville","alias":"拉斯威利"},
+		"6":{"mapname":"06_ensk","alias":"安斯克"},
+		"7":{"mapname":"11_murovanka","alias":"穆勒万卡"},
+		"8":{"mapname":"13_erlenberg","alias":"埃勒斯堡"},
+		"9":{"mapname":"10_hills","alias":"湖边的角逐"},
+		"10":{"mapname":"15_komarin","alias":"科马林"},
+		"11":{"mapname":"18_cliff","alias":"海岸争霸"},
+		"12":{"mapname":"19_monastery","alias":"小镇争夺战"},
+		"13":{"mapname":"28_desert","alias":"荒漠小镇"},
+		"14":{"mapname":"35_steppes","alias":"荒蛮之地"},
+		"15":{"mapname":"37_caucasus","alias":"胜利之门"},
+		"16":{"mapname":"33_fjord","alias":"北欧峡湾"},
+		"17":{"mapname":"34_redshire","alias":"斯特拉特福"},
+		"18":{"mapname":"36_fishing_bay","alias":"费舍尔湾"},
+		"19":{"mapname":"38_mannerheim_line","alias":"极地冰原"},
+		"20":{"mapname":"08_ruinberg","alias":"鲁别克"},
+		"21":{"mapname":"14_siegfried_line","alias":"齐格菲防线"},
+		"22":{"mapname":"22_slough","alias":"黑暗沼泽"},
+		"23":{"mapname":"23_westfeld","alias":"韦斯特菲尔德"},
+		"24":{"mapname":"29_el_hallouf","alias":"埃里-哈罗夫"},
+		"26":{"mapname":"31_airfield","alias":"阿拉曼机场"},
+		"27":{"mapname":"03_campania","alias":"坎帕尼亚"},
+		"28":{"mapname":"17_munchen","alias":"慕尼黑"},
+		"31":{"mapname":"44_north_america","alias":"里夫奥克斯"},
+		"32":{"mapname":"39_crimea","alias":"雅尔塔小镇"},
+		"33":{"mapname":"43_north_america","alias":"西部小镇"},
+		"34":{"mapname":"45_north_america","alias":"州际公路"},
+		"36":{"mapname":"42_north_america","alias":"钢铁丛林"},
+		"43":{"mapname":"53_japan","alias":"迷雾小镇"},
+		"44":{"mapname":"51_asia","alias":"香格里拉"},
+		"49":{"mapname":"47_canada_a","alias":"寂静海岸"},
+		"50":{"mapname":"85_winter","alias":"别洛戈尔斯克"},
+		"51":{"mapname":"73_asia_korea","alias":"神圣之谷"},
+		"52":{"mapname":"60_asia_miao","alias":"乌蒙雄山"},
+		"53":{"mapname":"00_tank_tutorial","alias":"训练关"},
+		"54":{"mapname":"59_asia_great_wall","alias":"钢铁长城"},
+		"55":{"mapname":"63_tundra","alias":"喀秋莎"},
+		"56":{"mapname":"84_winter","alias":"飓风小镇"},
+		"57":{"mapname":"86_himmelsdorf_winter","alias":"锡默尔斯多夫-冬"},
+		"58":{"mapname":"87_ruinberg_on_fire","alias":"鲁别克-火"},
+		"59":{"mapname":"94_battlecity","alias":"坦克大战"},
+		"60":{"mapname":"83_kharkiv","alias":"哈尔科夫"},
+		"61":{"mapname":"99_himmelball","alias":"足球场"},
+		"62":{"mapname":"96_prohorovka_defense","alias":"烈焰丘陵"},
+		"65":{"mapname":"102_deathtrack","alias":"坦克拉力赛"},
+		"66":{"mapname":"92_stalingrad","alias":"斯大林格勒"},
+		"67":{"mapname":"100_thepit","alias":"密特朗"},
+		"68":{"mapname":"95_lost_city","alias":"失落小镇"},
+		"69":{"mapname":"103_ruinberg_winter","alias":"鲁别克-冬"},
+		"70":{"mapname":"101_dday","alias":"诺曼底"},
+		"71":{"mapname":"111_paris","alias":"冰封"},
+		"72":{"mapname":"105_germany","alias":"柏林"},
+		"73":{"mapname":"112_eiffel_tower","alias":"帕里斯"},
+		"74":{"mapname":"114_czech","alias":"布拉格"}
+	},
+	"battle": {
+		"1": "标准模式",
+		"2": "训练模式",
+		"3": "联队模式",
+		"4": "竞技场",
+		"5": "领土模式",
+		"6": "教学模式",
+		"7": "7v7模式",
+		"8": "历史战",
+		"9": "活动模式",
+		"10": "要塞模式",
+		"11": "要塞争夺",
+		"16": "人机1",
+		"17": "人机2"
+	},
+	"win": {
+		"1": "全歼",
+		"2": "占领",
+		"3": "时间耗尽",
+		"4": "错误",
+		"5": "技术故障"
+	},
+	"game": {
+		"0": "标准战",
+		"1": "攻防战",
+		"2": "夺旗战",
+		"3": "历史战"
+	},
+	"gamename":{
+		"fallout":{
+			"name":"攻坚战",
+			"description":"任务目标:比敌方队伍获得更多的胜利点。"
+		},
+		"fallout2":{
+			"name":"组队围猎",
+			"description":"任务目标:四个队伍，各自为战。首先到达100胜利点数的队伍或者战斗结束后胜利点数最高的队伍则获胜。每次夺旗成功后获得5点数，造成1000伤害获得3点数，击毁一个敌方坦克获得1点数。"
+		},
+		"fallout3":{
+			"name":"死亡竞赛",
+			"description":"任务目标:所有人都是敌人，首先达到20胜利点数或战斗结束后胜利点数最高的获胜。每造成1000点伤害获得1点数，击毁一个敌方坦克获得1点数。"
+		},
+		"fallout4":{
+			"name":"资源战",
+			"description":"任务目标:比敌方队伍获得更多的胜利点。"
+		},
+		"escort":{
+			"name":"保护模式",
+			"description1": "任务目标: 保护我方基地或击毁敌方列表中的前三个敌人。",
+			"description2": "任务目标:占领敌人的基地或击毁所有敌军车辆。同时位于列表中的前三名的战车之一必须幸存。"
+		},
+		"nations":{
+			"name":"国战",
+			"description":"任务目标:攻占基地或击毁敌方所有战车。"
+		},
+		"ctf":{
+			"name":"标准模式",
+			"description":"任务目标:以攻占敌方基地为主或击毁敌方所有战车。"
+		},
+		"ctf2":{
+			"name":"占领模式",
+			"description": "任务目标:占领至少一个敌人的基地或击毁所有敌方战车。"
+		},
+		"assault":{
+			"name":"攻防战",
+			"description1": "任务目标:以防守己方基地为主或击毁敌方所有战车。",
+			"description2": "任务目标:以攻占敌方基地为主或击毁敌方所有战车。"
+		},
+		"assault2":{
+			"name":"攻防战",
+			"description1": "任务目标:保护友军基地或击毁所有敌方战车。",
+			"description2": "任务目标:占领其中一个敌方基地或击毁所有敌方战车。"
+		},
+		"domination":{
+			"name":"夺旗战",
+			"description": "任务目标:以占领地图中无人基地为主或击毁敌方所有战车。"
+		}
+	}
+}

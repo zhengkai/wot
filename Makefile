@@ -9,5 +9,8 @@ ssr:
 	npm run build:ssr
 	PORT=22005 npm run serve:ssr
 
+prod:
+	$(NG) build --prod --base-href 'https://zhengkai.github.io/wot/'
+
 init:
 	npm i

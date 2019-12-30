@@ -49,7 +49,7 @@ export class ListComponent implements OnInit {
 		console.log(JSON.stringify(this.list[0]));
 	}
 
-	levelClick(i: number) {
+	levelClick(i = 0) {
 
 		const le = this.filter.level;
 		if (!i) {
@@ -70,7 +70,7 @@ export class ListComponent implements OnInit {
 		this.result();
 	}
 
-	typeClick(t: string) {
+	typeClick(t = '') {
 
 		const ty = this.filter.type;
 		if (!t) {

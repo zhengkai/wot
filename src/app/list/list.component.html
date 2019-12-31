@@ -19,21 +19,23 @@
 
 <table class="tank-list">
 	<tr>
+		<th (click)="sortClick('name')">name</th>
+		<th (click)="sortClick('level')">level</th>
+		<th (click)="sortClick('type')">type</th>
 		<ng-container *ngFor="let r of rowKey">
 			<th (click)="sortClick(r)">{{ r }}</th>
 		</ng-container>
+		<th></th>
 	</tr>
 	<ng-container *ngFor="let a of list">
 		<tr *ngIf="a.show">
 			<td><a routerLink="/item/{{ a.id }}">{{ a.name }}</a></td>
 			<td>{{ a.level }}</td>
 			<td>{{ a.type }}</td>
-			<td class="num">{{ a.damage }}</td>
-			<td class="num">{{ a.assist }}</td>
-			<td class="num">{{ a.winpower }}</td>
-			<td class="num">{{ a.daypower }}</td>
-			<td class="num">{{ a.spotted }}</td>
-			<td class="num">{{ a.xp }}</td>
+			<ng-container *ngFor="let r of rowKey">
+				<td class="num">{{ a[r] }}</td>
+			</ng-container>
+			<td class="num"><a href="http://rank.kongzhong.com/rankweb/wottop.html?vid={{ a.id }}" target="_blank">top 200</a></td>
 		</tr>
 	</ng-container>
 </table>

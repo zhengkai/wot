@@ -14,14 +14,11 @@ export class ListComponent implements OnInit {
 	typeName = ['LT', 'MT', 'HT', 'TD', 'SPG'];
 
 	rowKey = [
-		'name',
-		'level',
-		'type',
+		'winrate',
 		'damage',
 		'assist',
 		'winpower',
 		'daypower',
-		'spotted',
 		'xp',
 	];
 
@@ -135,5 +132,4 @@ export class ListComponent implements OnInit {
 			}
 		});
 	}
-
 }

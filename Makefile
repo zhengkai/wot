@@ -11,6 +11,8 @@ ssr:
 
 prod:
 	$(NG) build --prod --base-href 'https://zhengkai.github.io/wot/'
+	rm -rf docs/*
+	mv dist/browser/* docs/
 
 init:
 	npm i

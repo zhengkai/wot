@@ -41,6 +41,8 @@ export class Data {
 			v.type = this.typeShort[t.entype];
 		});
 
+		// console.log(this.cache.data);
+
 		this.init = true;
 		return this.cache.data;
 	}
